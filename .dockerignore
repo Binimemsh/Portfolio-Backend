@@ -1,9 +1,13 @@
-target/ 
-.git 
-.gitignore 
-README.md 
-HELP.md 
-.mvn 
-mvnw 
-mvnw.cmd 
-*.log 
+﻿# Exclude everything in target except JAR files
+target/*
+!target/*.jar
+
+# Other exclusions
+.git
+.gitignore
+README.md
+HELP.md
+.mvn
+mvnw
+mvnw.cmd
+*.log
