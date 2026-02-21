@@ -26,4 +26,10 @@ public class ContactController {
     public ResponseEntity<List<Contact>> getAllContacts() {
         return ResponseEntity.ok(contactService.getAllContacts());
     }
+    
+    @GetMapping("/messages")
+    public ResponseEntity<List<Contact>> getAllMessages() {
+        List<Contact> messages = contactService.getAllContacts();
+        return ResponseEntity.ok(messages);
+    }
 }
